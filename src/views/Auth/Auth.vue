@@ -6,7 +6,9 @@
       <v-row class="auth-form-container">
         <v-col :sm="8" :lg="6" :xl="4" class="mx-auto">
           <v-card elevation="1">
-            <router-view />
+            <transition name="fade" mode="out-in">
+              <router-view />
+            </transition>
           </v-card>
         </v-col>
       </v-row>
